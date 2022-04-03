@@ -1,4 +1,4 @@
-name: auto-merge
+name: auto-merge-scenario-A
 
 on:
   push:
@@ -7,4 +7,13 @@ on:
 
 jobs:
   auto-merge:
-    runs-on: ubuntu-lastes
+    - name: merge main-branch into release-branch
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository release branch
+        uses: actions/checkout@v3
+        with:
+          ref: release
+        run: echo release branch was checkouted.
+      - name: Merge main-branch into release-branch
+        run: git merge main
