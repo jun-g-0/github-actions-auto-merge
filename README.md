@@ -10,8 +10,7 @@ GitHub Actions の素振りレポジトリ。main に Push すると、main の 
 
 ### シナリオ A
 
-1. main へ Push されたら、main から release への PR を作成する
-2. 作成された PR をクローズする
+1. main へ Push されたら、main から release への Merge する
 
 ### シナリオ B
 
