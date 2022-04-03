@@ -1,0 +1,10 @@
+name: auto-merge
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  auto-merge:
+    runs-on: ubuntu-lastes
