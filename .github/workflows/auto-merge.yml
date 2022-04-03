@@ -12,8 +12,8 @@ jobs:
     steps:
       - name: Check out repository release branch
         uses: actions/checkout@v3
-        with:
-          ref: release
-        run: echo release branch was checkouted.
-      - name: Merge main-branch into release-branch
-        run: git merge main
+        run: echo The repo was checkouted.
+      - name: create PR from main to release
+        run: gh pr create |
+          -B release |
+          -b 'Sample PR from main to release'
