@@ -15,6 +15,6 @@ jobs:
       - name: create PR from main to release
         run: gh pr create |
           -B release |
-          -b 'Sample PR from main to release'
+          -f
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
