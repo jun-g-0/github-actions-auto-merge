@@ -12,7 +12,6 @@ jobs:
     steps:
       - name: Check out repository release branch
         uses: actions/checkout@v3
-        run: echo The repo was checkouted.
       - name: create PR from main to release
         run: gh pr create |
           -B release |
