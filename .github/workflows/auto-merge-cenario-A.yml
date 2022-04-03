@@ -6,13 +6,12 @@ on:
   workflow_dispatch:
 
 jobs:
-  auto-merge:
-    - name: merge main-branch into release-branch
+  auto-merge-a:
+    name: merge main-branch into release-branch
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository release branch
         uses: actions/checkout@v3
-        run: echo The repo was checkouted.
       - name: create PR from main to release
         run: gh pr create |
           -B release |
