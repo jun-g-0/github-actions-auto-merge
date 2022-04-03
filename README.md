@@ -8,15 +8,15 @@ GitHub Actions の素振りレポジトリ。main に Push すると、main の 
 
 ## 実現したい挙動
 
-### シナリオ A
+### シナリオ A: DONE
 
 1. main へ Push されたら、main から release への Merge する
 
-### シナリオ B
+### シナリオ B: TODO
 
 1. main へ Push されたら、main から release への PR を作成する
 2. (ボーナス)PR の URL を Slack へ送信する
 
-### シナリオ C
+### シナリオ C: TODO
 
 1. main へ Push されたら、Slack へ、「main から release へ Merge する GitHub Actions」をトリガーする URL を投稿する
